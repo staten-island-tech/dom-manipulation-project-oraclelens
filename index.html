@@ -8,11 +8,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container-box">
-      <p id="text">We can add more text with input</p>
-      <input type="text" id="input" />
-      <button type="button" id="btn">click me!</button>
+    <h1>What Are You Listening To?</h1>
+    <section class="form-parent">
+      <div class="form">
+        <div class="songtitle">
+            <label for="title"> Song Name</label>
+            <input type="text" id="title" class="input titleInput" required />
+        </div>
+        <div class="artistname">
+          <label for="artist">Artist Name</label>
+          <input type="text" id="artist" class="input artistInput" required />
+        </div>
+        <div class="imageurl">
+          <label for="url">Enter Image URL</label>
+          <input type="text" id="imageurl" class="input urlInput" required />
+        </div>
+      </div>
+      <button id="makecard">Results</button>
+    <div>
+      <div id="box">
+      </div>
     </div>
-    <script src="hi.js"></script>
   </body>
 </html>
