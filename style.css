@@ -1,3 +1,57 @@
-html{
+*,
+html,
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+h4{
+    margin-top: 50px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    border: 3px solid white;
+    background-color: rgb(250, 135, 155) ;
+    border-radius: 15px;
+    font-size: 4vh;
+}
+
+body{
+    align-items: center; 
+    text-align: center;
     background-color: pink;
+    margin: 30px;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.form{
+    margin-top: 5%;
+    border: 3px solid white;
+    font-size: 2vh; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(250, 135, 155);
+    border-radius: 15px; 
+}
+
+h3{
+    margin-top:100px;
+    border: 3px solid white; 
+    background-color: rgb(120, 120, 236); 
+    font-size: 30px; 
+    border-radius: 15px; 
+}
+
+.display{
+    margin: 30px;
+    border: 3px solid white;
+    background-color: rgb(120, 120, 236); 
+    border-radius: 5px;
+    padding-top: 10px; 
+}
+
+#delete{
+    margin-top: 15%; 
 }

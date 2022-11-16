@@ -8,26 +8,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>What Are You Listening To?</h1>
-    <section class="form-parent">
-      <div class="form">
-        <div class="songtitle">
-            <label for="title"> Song Name</label>
-            <input type="text" id="title" class="input titleInput" required />
-        </div>
-        <div class="artistname">
-          <label for="artist">Artist Name</label>
-          <input type="text" id="artist" class="input artistInput" required />
-        </div>
-        <div class="imageurl">
-          <label for="url">Enter Image URL</label>
-          <input type="text" id="imageurl" class="input urlInput" required />
-        </div>
+    <h4>What Are You Listening To?</h4>
+    <div class="form">
+      <div class="songtitle">
+        <label for="title"> Song Name</label>
+        <input type="text" id="title" class="input titleInput" />
       </div>
-      <button id="makecard">Results</button>
-    <div>
-      <div id="box">
+      <div class="artistname">
+        <label for="artist">Artist Name</label>
+        <input type="text" id="artist" class="input artistInput" />
+      </div>
+      <div class="imageurl">
+        <label for="url">Enter Image URL</label>
+        <input type="text" id="imageurl" class="input urlInput" />
       </div>
     </div>
+    <button id="create">Results</button>
+    <div>
+      <div id="container"></div>
+    </div>
+    <script src="hi.js"></script>
   </body>
 </html>
