@@ -9,8 +9,6 @@ const DOMSelectors = {
   delete: document.getElementById("delete"),
 };
 
-function addNewDiv() {}
-
 DOMSelectors.makecard.addEventListener("click", function () {
   let songtitle = DOMSelectors.songtitle.value;
   let artistname = DOMSelectors.artistname.value;
@@ -23,7 +21,7 @@ DOMSelectors.makecard.addEventListener("click", function () {
       <h1 class="songtitles">${songtitle}</h1>
       <h2 class="artists">${artistname}</h2>
       <img src="${imageurl}" class="myImage"alt="">
-      <button id="delete" onclick="this.parentElement.remove()">Delete</button>
+      THERE SHOULD BE A BUTTON HERE BUT IDK HOW TO ADD IT PROPERLY
     </div>`
   );
 });
