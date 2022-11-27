@@ -15,13 +15,25 @@ DOMSelectors.makecard.addEventListener("click", function () {
   let imageurl = DOMSelectors.imageurl.value;
 
   DOMSelectors.container.insertAdjacentHTML(
-    "afterbegin",
+    "afterend",
     `<div class="display">
       <image src></image>
       <h1 class="songtitles">${songtitle}</h1>
       <h2 class="artists">${artistname}</h2>
       <img src="${imageurl}" class="myImage"alt="">
-      THERE SHOULD BE A BUTTON HERE BUT IDK HOW TO ADD IT PROPERLY
-    </div>`
+      <button class="remove btn">Remove Album</button>
+      </div>`
   );
+
+  const removeButton = document.querySelector(".remove");
+  removeButton.addEventListener("click", (event) => {
+    if (event.target.tagName === "BUTTON") {
+      const button = event.target;
+      const card = button.parentNode;
+      const display = card.parentNode;
+      if (button.textContent === "Remove Album") {
+        display.removeChild(card);
+      }
+    }
+  });
 });
