@@ -21,7 +21,7 @@ DOMSelectors.makecard.addEventListener("click", function () {
       <h1 class="songtitles">${songtitle}</h1>
       <h2 class="artists">${artistname}</h2>
       <img src="${imageurl}" class="myImage"alt="">
-      <button class="remove btn">Remove Album</button>
+      <button class="remove">Remove Album</button>
       </div>`
   );
 
